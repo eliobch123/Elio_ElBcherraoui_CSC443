@@ -1,0 +1,9 @@
+#image {
+    height: 500px;
+    width: 500px;
+    float: right;
+}
+
+.odd {
+    color: gray;
+}
