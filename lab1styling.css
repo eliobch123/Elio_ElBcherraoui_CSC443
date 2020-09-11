@@ -7,3 +7,58 @@
 .odd {
     color: gray;
 }
+
+.edu {
+    color: gray;
+    font-size: xx-large;
+}
+
+.desc {
+    color: red;
+}
+
+.even {
+    color: blue;
+}
+
+.roman {
+    list-style-type: lower-roman;
+}
+
+.c1 {
+    color: gray;
+}
+
+#q1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#q2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#q3 {
+    font-family: "sans-serif";
+}
+
+table {
+    border: 5px double red;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+footer {
+    position: fixed;
+    color: gray;
+    background-color: aqua;
+    bottom: 0;
+    text-align: center;
+    margin-left: 30%;
+}
