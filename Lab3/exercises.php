@@ -84,5 +84,23 @@
     ?>
 
     <br>
+    
+    <?php
+    function folderCrawler($fullpath){
+        $scan = $scandir($fullpath);
+        ?>
+        <ul>
+        <?php
+        foreach($scan as $file){
+            $filepath=pathh($file);
+        ?>
+            <li><a href=<?= $filepath ?>>
+            <?= $file ?> </a></li>
+            <?php
+        }
+        ?></ul>
+        <?php
+    }
+    ?>
 </body>
 </html>
