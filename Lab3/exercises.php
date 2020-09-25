@@ -58,7 +58,31 @@
      ?>
 
     <br>
-  
+    <?php
+        function lineSum($files, $line_num) {
 
+            $arr= file($files);
+            $arr2= explode(" ",$arr[$line_num]);
+                return array_sum($arr2);
+        } 
+        print(lineSum("file1.txt", 2));
+    ?>
+    <br>
+     <?php
+        function swapArray($str) {
+            $arr= explode(" ",$str); 
+            if(count($arr)%2==0){
+                $arr1= array_slice($arr,0,(count($arr)/2)); 
+                $arr2= array_slice($arr,(count($arr)/2)); 
+                $arr1=array_reverse($arr1); 
+                $arr2=array_reverse($arr2);
+                $arr= array_merge($arr1,$arr2); }
+                    return $arr; 
+        }
+        
+        print_r(swapArray("1 2 2 1"));
+    ?>
+
+    <br>
 </body>
 </html>
