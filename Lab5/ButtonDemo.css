@@ -1,0 +1,19 @@
+.click {
+    background-color: red;
+    color: yellow;
+    background-position: center;
+    width: 70px;
+    height: 40px;
+
+
+}
+
+div {
+    text-align: center;
+
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+}
