@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+
+    <ul>
+      <li class="test">element1</li>
+      <li>element2</li>
+      <li class="test">element3</li>
+      <li>element4</li>
+    </ul>
+
+    <button>blue</button>
+    <script>
+      $(document).ready(function () {
+        // $("li").hide(1000);
+        // $("li").show(1000);
+        // $(".test").hide();
+        toggle_color = false;
+        $("button").click(function () {
+          if (toggle_color) {
+            $("li").css("color", "black");
+          } else {
+            $("li").css("color", "blue");
+          }
+          toggle_color = !toggle_color;
+        });
+      });
+    </script>
+  </body>
+</html>
