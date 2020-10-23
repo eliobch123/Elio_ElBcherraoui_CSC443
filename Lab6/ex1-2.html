@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>
+      <span class="cow_color"><strong>blue</strong></span> cow
+    </h1>
+    <p>
+      I never saw a <span class="cow_color"><strong>blue</strong></span> cow
+    </p>
+    <p>
+      change the cows color to
+      <input id="input_color" type="text" name="color" />
+      <button id="button_change">change!</button>
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".cow_color").html($("input").val()).css("color", $("input").val());
+        });
+      });
+    </script>
+  </body>
+</html>
