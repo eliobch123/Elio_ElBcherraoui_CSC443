@@ -1,0 +1,31 @@
+<html>
+  <head> </head>
+  <body>
+    <form>
+      Name: <input type="text" id="name" />
+      <br />
+      Short Description:
+      <textarea name="" id="descrip" cols="30" rows="10"></textarea>
+      <br />
+      Image Url:<input type="text" id="txt_url" />
+      <p>Gender:</p>
+      <div>
+        <input type="radio" id="male" name="gender" value="male" checked />
+        <label for="male">Male</label>
+      </div>
+
+      <div>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <br />
+      Birthday: <input type="date" name="" id="bday" />
+      <br />
+      Favorite Color: <input type="color" id="fav_color" />
+      <input type="button" id="bt_post" value="Submit" />
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
